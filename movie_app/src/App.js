@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import PropTypes  from "prop-types";
 
 const foodILike = [
   {
@@ -42,6 +43,12 @@ function Food({ name, picture }) {
     </div>
   );
 }
+
+Food.propTypes = {
+  name: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired,
+  rating: PropTypes.number
+};
 
 function App() {
   return (
