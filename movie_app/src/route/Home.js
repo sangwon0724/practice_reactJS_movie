@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './Home.css';
 //import PropTypes  from "prop-types";
 import React from 'react';
