@@ -9,9 +9,11 @@ function App(){
   return(
   <HashRouter>
     <Navigation />
-    <Route path="/" component={Home} exact={true}/>
-    <Route path="/about" component={About} exact={true}/>
-    <Route path="/movie/:id" component={Detail} exact={true}/>
+    <Routes>
+      <Route path="/" element={<Home/>} exact={true}/>
+      <Route path="/about" element={<About/>} exact={true}/>
+      <Route path="/movie/:id" element={<Detail/>} exact={true}/>
+    </Routes>
   </HashRouter>
   );
 }
